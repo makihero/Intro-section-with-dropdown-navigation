@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+    <img id="icon-menu" class="icon-menu" src="./images/icon-menu.svg" alt="menu">
+    <nav id="navBar">
+      <div class="back"></div>
+      <div class="front">
+          <div class="img-container">
+            <img id="close" src="./images/icon-close-menu.svg" alt="close menu">
+          </div>
+          <ul class="list-menu">
+            <p id="feature" class="arrows">Features <img class="icon-arrow-features" src="./images/icon-arrow-down.svg" alt="arrow down"></p>
+              <ul class="features">
+                <li> <img src="./images/icon-todo.svg" alt=""> Todo List</li>
+                <li> <img src="./images/icon-calendar.svg" alt=""> Calendar</li>
+                <li> <img src="./images/icon-reminders.svg" alt=""> Reminders</li>
+                <li> <img src="./images/icon-planning.svg" alt=""> Planning</li>
+              </ul>
+            <p id="company" class="arrows">Company <img class="icon-arrow-company" src="./images/icon-arrow-down.svg" alt="arrow down"></p>
+              <ul class="company">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <div class="buttons">
+            <button>Login</button>
+            <button>Register</button>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-img">
+      <picture>
+        <source media="(max-width: 1023px)" srcset="./images/image-hero-mobile.png" >
+        <source media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png" >
+        <img class="hero-image" src="./images/image-hero-mobile.png" alt="hero-mobile">
+      </picture>
+    </section>
+
+    <section class="hero-text">
+      <h2>Make remote work</h2>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div class="logos">
+        <img src="./images/client-databiz.svg" alt="databiz">
+        <img src="./images/client-audiophile.svg" alt="audiophile">
+        <img src="./images/client-meet.svg" alt="meet">
+        <img src="./images/client-maker.svg" alt="maker">
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
